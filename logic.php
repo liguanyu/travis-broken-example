@@ -1,15 +1,15 @@
 <?php
-class SumTest
+class CompareTest
 {
     # 0 1 2
 	# < = >
     public function test($num1, $num2) {
         if($num1>$num2){
-            return 2;
+            return ">";
         }elseif($num1<$num2){
-            return 0;
+            return "<";
         }else{
-            return 1;
+            return "=";
         }
     }
 }

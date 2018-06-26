@@ -37,8 +37,8 @@ Welcome to Software Development!
 <?php
 require "logic.php";
 
-$symbol = array("<","=",">");
-$sumtest = new SumTest;
+#$symbol = array("<","=",">");
+$compare = new CompareTest;
 if( $_POST["submit"] == "判断"){       // 判断提交的按钮名称是否为“登录”
  // 使用 echo 语句输出使用 $_POST[] 方法获取的用户名和密码
 
@@ -46,7 +46,7 @@ if( $_POST["submit"] == "判断"){       // 判断提交的按钮名称是否为
     $number1 = intval($_POST['num1']);
     $number2 = intval($_POST['num2']);
     
-    echo strval($number1). $symbol[$sumtest->test($number1,$number2)]. strval($number2);
+    echo strval($number1). $compare->test($number1,$number2). strval($number2);
     echo "<br >";
 }
 ?>

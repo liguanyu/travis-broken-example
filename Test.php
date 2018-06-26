@@ -1,15 +1,15 @@
 <?php
 require "logic.php";
 
-class Test extends SumTest
+class Test extends PHPUnit_Framework_TestCase
 {
 	# 0 1 2
 	# < = >
 	public function testTenPlusTen() {
-		$this->assertEquals($this->test(10,10),0);
-		$this->assertEquals(1,0);
-		$this->assertEquals($this->test(11,10),2);
-		$this->assertEquals($this->test(10,11),0);
+		$compare = new CompareTest;
+		$this->assertEquals($compare->test(10,10),"=");
+		$this->assertEquals($compare->test(11,10),">");
+		$this->assertEquals($compare->test(10,11),"<");
   	}
 }
 
