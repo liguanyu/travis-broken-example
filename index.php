@@ -14,7 +14,8 @@
       <input type="text" name="num2" size="12">
       相比谁大？
       请输入整数
-      <input type="submit" name="submit" value="判断" size="12">
+      <br>
+      <input type="submit" name="submit" value="判断" size="15">
      </td>
    </tr>
   </table>
