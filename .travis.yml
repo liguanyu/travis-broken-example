@@ -2,11 +2,10 @@ language: php
 php:
   - 5.5
   - 5.4
-  - hhvm
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_5d4cce8cb471_key -iv $encrypted_5d4cce8cb471_iv -in travis.enc -out travis -d
-  #- chmod 600 ~/.ssh/id_rsa
+  - openssl aes-256-cbc -K $encrypted_5d4cce8cb471_key -iv $encrypted_5d4cce8cb471_iv -in travis.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 23.106.130.178\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 addons:
