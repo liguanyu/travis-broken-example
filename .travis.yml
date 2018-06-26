@@ -14,4 +14,4 @@ addons:
 script: phpunit Test.php
 
 after_success:
- - ssh root@23.106.130.178 'cd travis-cicd-SD && git pull && ./deploy.sh'
+ - ssh -p 26120 root@23.106.130.178 'cd travis-cicd-SD && git pull && ./deploy.sh'
