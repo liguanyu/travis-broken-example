@@ -10,7 +10,7 @@ before_install:
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 23.106.130.178\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
-  addons:
+addons:
   ssh_known_hosts: 23.106.130.178:26120
 
 script: phpunit Test.php
