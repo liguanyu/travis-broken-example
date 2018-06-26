@@ -1,9 +1,12 @@
 <?php
+require "logic.php";
 
-class Test extends PHPUnit_Framework_TestCase
+class Test extends SumTest
 {
-	public function testOnePlusOne() {
-		$this->assertEquals(1+1,1);
+	public function testTenPlusTen() {
+		$this->assertEquals($this->test(10,10),"=");
+		$this->assertEquals($this->test(11,10),">");
+		$this->assertEquals($this->test(10,11),"<");
   	}
 }
 
