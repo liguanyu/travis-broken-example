@@ -13,8 +13,8 @@
       和
       <input type="text" name="num2" size="12">
       相比谁大？
-      <br><br/>
-      <input type="submit" name="submit" value="判断">
+      请输入整数
+      <input type="submit" name="submit" value="判断" size="12">
      </td>
    </tr>
   </table>
