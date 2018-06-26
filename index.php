@@ -15,7 +15,7 @@
       相比谁大？
       请输入整数
       <br>
-      <input type="submit" name="submit" value="判断" size="15">
+      <input type="submit" name="submit" value="判断" style="width:50px;height:20px">
      </td>
    </tr>
   </table>
