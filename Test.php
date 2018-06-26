@@ -7,6 +7,7 @@ class Test extends SumTest
 	# < = >
 	public function testTenPlusTen() {
 		$this->assertEquals($this->test(10,10),0);
+		$this->assertEquals(1,0);
 		$this->assertEquals($this->test(11,10),2);
 		$this->assertEquals($this->test(10,11),0);
   	}
