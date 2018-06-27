@@ -39,7 +39,7 @@ class TodoHandler(BaseHTTPRequestHandler):
             print "===================="
             print "Deploy"
             print ""
-            subprocess.call("git pull")
+            subprocess.call(["git", "pull"])
             print ""
             subprocess.call("./deploy.sh")
             print "deploy ends"
