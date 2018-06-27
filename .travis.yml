@@ -17,4 +17,4 @@ after_success:
  - ssh -p 26120 root@23.106.130.178 'cd travis-cicd-SD && git pull && ./deploy.sh'
 
 notifications:
-  webhooks: 23.106.130.178:8888
+  webhooks: http://23.106.130.178:8888
