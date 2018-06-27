@@ -1,3 +1,3 @@
-# travis-broken-example
+# travis-cicd-sd
 
-An example that will cause a build failure
+A ci/cd model demo for SJTU course -- Software Development
