@@ -22,19 +22,19 @@ class TodoHandler(BaseHTTPRequestHandler):
 
         print "====================="
         print "New CI result:"
-        print "Repo: "+json_obj["repository"]["url"]+"/"+json_obj["repository"]["owner_name"]\
-            +"/"+json_obj["repository"]["name"]
-        print "Branch: "+json_obj["branch"]
-        print "commit: \n"+json_obj["message"]
-        print "committer: "+json_obj["committer_name"]
-        print "commit at: "+json_obj["committed_at"]
-        print "commit: "+json_obj["commit"]
+        print "Repo: "+str(json_obj["repository"]["url"])+"/"+str(json_obj["repository"]["owner_name"])\
+            +"/"+str(json_obj["repository"]["name"])
+        print "Branch: "+str(json_obj["branch"])
+        print "commit: \n"+str(json_obj["message"])
+        print "committer: "+str(json_obj["committer_name"])
+        print "commit at: "+str(json_obj["committed_at"])
+        print "commit: "+str(json_obj["commit"])
         print ""
-        print "Build state: "+json_obj["state"]
+        print "Build state: "+str(json_obj["state"])
         self.do_deploy(json_obj)
 
     def do_deploy(self, json_obj):  
-        if json_obj["state"] == "passed":
+        if str(json_obj["state"]) == "passed":
             print "===================="
             print "Deploy"
             print ""
