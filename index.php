@@ -10,7 +10,7 @@
 陈典章
 一个同学
 <br>
-Welcome to Software Development!!!!!!
+Welcome to Software Development!!
 <br>
 <a href="http://23.106.130.178:8000/">Server Monitor</a>
 <br>
