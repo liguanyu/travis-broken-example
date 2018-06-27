@@ -27,7 +27,7 @@ class TodoHandler(BaseHTTPRequestHandler):
             +"/"+str(json_obj["repository"]["name"])
         print "Branch: "+str(json_obj["branch"])
         print "commit: \n"+str(json_obj["message"])
-        print "committer: "+str(json_obj["committer_name"])
+        print "committer: "+json_obj["committer_name"]
         print "commit at: "+str(json_obj["committed_at"])
         print "commit: "+str(json_obj["commit"])
         print ""
