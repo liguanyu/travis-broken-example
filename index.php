@@ -11,8 +11,11 @@
 一个同学
 <br>
 Welcome to Software Development!!
+ヾ(^▽^ヾ)
 <br>
 <a href="http://23.106.130.178:8000/">Server Monitor</a>
+<br>
+下面这个简单的逻辑主要是给CI用的，用来做条件测试
 <br>
 <form action="" method="post" name="form1">
   <table width="500" border="0" cellpadding="0" cellspacing="0">
