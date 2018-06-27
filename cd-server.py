@@ -36,7 +36,7 @@ class TodoHandler(BaseHTTPRequestHandler):
 
     def do_deploy(self, json_obj):  
         if str(json_obj["state"]) == "passed":
-            print "===================="
+            print "-------------------"
             print "Deploy"
             print ""
             subprocess.call(["git", "pull"])
@@ -45,7 +45,7 @@ class TodoHandler(BaseHTTPRequestHandler):
             print "deploy ends"
             print "==================="
         else:
-            print "===================="
+            print "-------------------"
             print "not deploy"
             print "===================="
 
