@@ -8,14 +8,11 @@ import subprocess
 
 
 class TodoHandler(BaseHTTPRequestHandler):
-    def do_resp(self):
-        self.send_response(200)
 
     def do_GET(self):
         return 
 
     def do_POST(self):
-        self.do_resp()
         data = self.rfile.read(int(self.headers['content-length']))  
         post_body = urllib2.unquote(data)[len("payload="):]
         post_body.decode('utf8')
