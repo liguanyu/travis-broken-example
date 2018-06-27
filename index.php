@@ -13,7 +13,10 @@
 Welcome to Software Development!!
 ヾ(^▽^ヾ)
 <br>
+<br>
+这个是监测server的状态的网页，采用pyDash
 <a href="http://23.106.130.178:8000/">Server Monitor</a>
+<br>
 <br>
 下面这个简单的逻辑主要是给CI用的，用来做条件测试
 <br>
