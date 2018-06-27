@@ -40,8 +40,8 @@ class TodoHandler(BaseHTTPRequestHandler):
             print "Deploy"
             print ""
             subprocess.call(["git", "pull"])
-            print ""
-            subprocess.call([sys.path[0], "/deploy.sh"])
+            subprocess.call(["bash", "/deploy.sh"])
+            print "cp complete"
             print "deploy ends"
             print "==================="
         else:
