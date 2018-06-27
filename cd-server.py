@@ -18,6 +18,7 @@ class TodoHandler(BaseHTTPRequestHandler):
         self.do_resp()
         data = self.rfile.read(int(self.headers['content-length']))  
         post_body = urllib2.unquote(data)[len("payload="):]
+        post_body.decode('utf8')
         json_obj = json.loads(post_body)
 
         print "====================="
